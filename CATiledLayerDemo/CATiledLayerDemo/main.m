@@ -56,6 +56,8 @@ int main(int argc, const char * argv[]) {
                 //save file
                 NSString *path = [outputPath stringByAppendingFormat:@"_%02i_%02i.jpg", x, y];
                 [data writeToFile:path atomically:NO];
+                
+                NSLog(@"%@\n",path);
             }
         }
         
